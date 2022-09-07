@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6200EA"
+    android:backgroundTint="#00BFA5"
+    android:backgroundTintMode="multiply"
+    android:padding="5dp"
+    app:layout_anchorGravity="right"
+    tools:context=".MainActivity">
+<!-- TODO 2 : design layouts and give an id to views you want to manage throw java -->
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:background="#00B8D4"
+        android:orientation="vertical"
+        android:rotation="90">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="LOG IN"
+            android:textIsSelectable="false"
+            app:backgroundTint="#4AC87E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boxLL"
+        android:layout_width="281dp"
+        android:layout_height="360dp"
+        android:layout_centerInParent="true"
+        android:background="#7BD6FF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="confirm password"
+            android:inputType="textPersonName"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SIGN UP"
+            app:backgroundTint="#4AC87E" />
+    </LinearLayout>
+
+
+</RelativeLayout>
